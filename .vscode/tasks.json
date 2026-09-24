@@ -51,5 +51,7 @@
 //set-target esp32s3
 {"type": "shell","label": "set-target esp32s3","command": "idf_cmd_init.bat && idf_build.bat set-target esp32s3",
 "args": [],"options": {"cwd": "${workspaceFolder}"},"group": "build",},
+{"type": "shell","label": "set-target esp32p4","command": "idf_cmd_init.bat && idf_build.bat set-target esp32p4",
+"args": [],"options": {"cwd": "${workspaceFolder}"},"group": "build",},
     ]
   }
