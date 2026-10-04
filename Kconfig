@@ -4,6 +4,12 @@
 #
 mainmenu "Espressif IoT Development Framework Configuration"
 
+    # 支持 \ Kconfig 宏（IDF 6 特性），供 esp_wifi_remote/esp_hosted 组件在 v5.x 下解析
+    config ESP_IDF_VERSION
+        string
+        option env="ESP_IDF_VERSION"
+        default "5.5"
+
     orsource "./components/soc/$IDF_TARGET/include/soc/Kconfig.soc_caps.in"
 
     config IDF_CMAKE
